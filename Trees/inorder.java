@@ -1,12 +1,10 @@
-package Tees;
+package Trees;
 
 import java.util.*;
-
 class Node {
     int data;
     Node left;
     Node right;
-
     Node(int data) {
         this.data = data;
         this.left = null;
@@ -41,20 +39,14 @@ public class inorder {
     }
 
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
-
         int n = sc.nextInt();
-
         Node root = null;
-
         for (int i = 0; i < n; i++) {
             int value = sc.nextInt();
             root = insert(root, value);
         }
-
         inorder1(root);
-
         sc.close();
     }
 }
